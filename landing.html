@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<style>
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+    body {
+        max-width: 90%;
+        margin: auto;
+        background-color: #FFF9ED;
+    }
+    #cart-image{
+             color: darkorange;
+
+    }
+    .feature:hover{
+        background-color: darkorange;
+        cursor: pointer;
+        color: aliceblue;
+        min-width: 100px;
+        padding: 8px 0px;
+       border-radius: 8px;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+    }
+    .home:hover{
+        background-color: darkorange;
+        cursor: pointer;
+        color: aliceblue;
+        min-width: 100px;
+        padding: 8px 0px;
+       border-radius: 8px;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+    }
+    .about:hover{
+        background-color: darkorange;
+        cursor: pointer;
+        color: aliceblue;
+        min-width: 100px;
+        padding: 8px 0px;
+       border-radius: 8px;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+    }
+    .benefits:hover{
+        background-color: darkorange;
+        cursor: pointer;
+        color: aliceblue;
+        min-width: 100px;
+        padding: 8px 0px;
+       border-radius: 8px;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+    }
+    .login {
+       background-color: darkorange; 
+       color:aliceblue;
+      min-width: 150px;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       padding: 8px 0px;
+       border-radius: 8px;
+       cursor:pointer;
+    }
+    .left-top-header {
+       display: flex;
+       align-items: center;
+       justify-content: center; 
+       gap: 60px;
+       margin-top: 10px;
+       font-size: 20px;
+    }
+    .right-header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px;
+        gap: 10px;
+       
+
+
+    }
+    #retail{
+        display:flex;
+    }
+    .top-header{
+         display: flex;
+       align-items: center;
+       justify-content: space-between;
+       position: sticky;
+       top: opx;
+    
+    }
+    span {
+       background-color: rgb(238, 218, 193); 
+      max-width: 220px;
+      height: 25px;
+      display: flex;
+        justify-content: center;
+        align-items: center;
+       padding: 8px 0px;
+       border-radius: 8px;
+       margin: 30px 0px 0px 0px;
+    }
+   
+    .text{
+        font-size: 60px;
+        margin-top: 30px;
+
+    }
+    .small-text{
+        font-size:23px;
+        margin-top: 30px;
+
+    }
+    .get-started {
+       background-color: darkorange; 
+       color:aliceblue;
+      min-width: 200px;
+      height:30px;
+      display: flex;
+       align-items: center;
+       justify-content: center;
+       padding: 8px 0px;
+       border-radius: 12px;
+       font-size: 20px;
+    }
+    .explore-dashboard {
+       background-color: aliceblue; 
+      min-width: 200px;
+      height:30px;
+      display: flex;
+       align-items: center;
+       justify-content: center;
+       padding: 8px 0px;
+       border-radius: 12px;
+       border: 1px solid darkorange;
+       margin:0px 70px 0px 0px;
+       font-size:20px;
+    }
+    .button-get-started{
+        display: flex;
+       align-items: center;
+       justify-content: none;
+       margin-top:50px;
+       gap:40px;
+    }
+    .image-content {
+        margin-top: 20px;
+        
+        height: 500px;
+        width: 100%;
+        background-image: url("background.jpeg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: right;
+
+    }
+    .everything-you{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top:10px;
+    }
+    .bottom-text{
+         display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top:5px;
+        font-size: 20px;
+
+    }
+    .box1{
+        height: 150px;
+        width: 200px;
+        background-color: aliceblue;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid aliceblue;
+        border-radius: 15px;
+        box-shadow: 2px 2px 4px orange;
+        cursor: pointer;
+    }
+    .box2{
+        height: 150px;
+        width: 200px;
+        background-color: aliceblue;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid aliceblue;
+        border-radius: 15px;
+        box-shadow: 2px 2px 4px orange;
+        cursor: pointer;
+    }
+    .box3{
+        height: 150px;
+        width: 200px;
+        background-color: aliceblue;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid aliceblue;
+        border-radius: 15px;
+        box-shadow: 2px 2px 4px orange;
+        cursor: pointer;
+    }
+    .box4{
+        height: 150px;
+        width: 200px;
+        background-color: aliceblue;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid aliceblue;
+        border-radius: 15px;
+        box-shadow: 2px 2px 4px orange;
+        cursor: pointer;
+    }
+    .fourth-part{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin-top: 20px;
+    }
+    .stock-analysis{
+        margin: 10px 20px 10px 40px;
+    }
+    .order-management{
+        margin: 10px 20px 10px 40px;
+    }
+    .inventory-management{
+        margin: 10px 20px 10px 40px;
+    }
+    .customer-insight{
+        margin: 10px 20px 10px 40px;
+    }
+    .home{
+        color: darkorange;
+    }
+    
+    
+    
+    
+
+    
+
+    
+    
+    
+</style>
+<body>
+    <header>
+    <section class="top-header">
+        <div class="right-header">
+            <i id="cart-image" class="fa-solid fa-cart-shopping" style="font-size: 32px;"></i>
+           <b> <a id="retail" style="font-size: 35px">Retail<p style="color:darkorange; font-size: 35px">Pulse</p></a></b>
+
+        </div>
+        <div class="left-top-header">
+            <div class="home">
+                Home
+
+            </div>
+            <div class="feature">Features</div>
+            <div class="benefits">Benefits</div>
+            <div class="about">About</div>
+            <div class="login">Login</div>
+        </div>
+
+    </section>
+    </header>
+    <section class="image-content">
+    <section class="left-section">
+        <span class="retail-management">
+            Small Retail management
+        </span>
+        <div class="text">
+           <b> Manage Your Retail<p style=" color: darkorange;"> Business Smarter & Simple</p></b>
+        </div>
+        <div class="small-text">
+            RetaliPulse helps you track sales, products, orders.<p> and customers — all in one place. Make better decisions,</p> boost your growth and take your business to the next level.
+
+        </div>
+        <div class="button-get-started">
+        <div class="get-started">
+            get started
+        </div>
+        <div class="explore-dashboard">
+            <a href="dashboard" style="text-decoration:none; color:darkorange">Explore dashboard</a>
+        </div>
+        </div>
+    </section>
+     </section>
+     <section class="third-part">
+        <div class="everything-you">
+            <h2><b>Everything You Need</b></h2>
+
+        </div>
+        <div class="bottom-text">
+            Powerful features to help you manage your retail business etcently
+
+        </div>
+     </section>
+     <section class="fourth-part">
+        <div class="box1">
+            <i id="stock-analysis"  class="fa-brands fa-sellsy" style=" font-size: 35px; color:darkorange; border: 2px solid darkorange; border-radius: 5px; padding: 2px"></i>
+           <b> <a id="name" href="stock analysis" style="text-decoration:none; color:darkorange;">stock analysis</a></b>
+            <p class="stock-analysis">Track your sales and revenue growth.</p>
+        </div>
+        <div class="box2">
+            <i id="order-management"  class="fa-brands fa-jedi-order" style="font-size: 35px;  color:darkorange; border: 2px solid darkorange; border-radius: 5px; padding: 2px"></i>
+            <b> <a id="name" href="order management" style="text-decoration:none; color:darkorange;">order management</a></b>
+            <p class="order-management">Manage orders and track status easily.</p>
+            
+        </div>
+        <div class="box3">
+            <i id="inventory-management"  class="fa-solid fa-house-user" style="font-size: 35px; color:darkorange; border: 2px solid darkorange; border-radius: 5px; padding: 2px "></i>
+            <b><a id="name" href="inventory management" style=" text-decoration:none; color:darkorange;">inventory management</a></b>
+            <p class="inventory-management">Keep track of your stock and products.</p>
+        </div>
+        <div class="box4">
+            <i id="customer-insight"  class="fa-solid fa-image-portrait" style="font-size: 35px; color:darkorange; border: 2px solid darkorange; border-radius: 5px; padding: 2px "></i>
+          <b> <a id="name" href="customer insight" style="text-decoration:none; color:darkorange;">customer insight</a> </b>
+           <p class="customer-insight">Understand your customers batter.</p>
+            
+            
+        </div>
+     </section>
+
+    
+</body>
+</html>
